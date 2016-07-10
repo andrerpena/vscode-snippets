@@ -21,5 +21,14 @@
 			"$0"
 		],
 		"description": "Triggers errors on null arguments"
+	},
+
+	"assert array": {
+		"prefix": "assertArray",
+		"body": [
+			"if(!(${arg} instanceof Array)) throw Error ('Argument \\'${arg}\\' should be an Array')",
+			"$0"
+		],
+		"description": "Asserts that the argument is an array"
 	}
 }
